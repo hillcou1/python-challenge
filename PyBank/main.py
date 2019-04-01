@@ -43,3 +43,6 @@ with open(csvpath, newline='') as csvfile:
     Printlist.append('Greatest Decrease in Revenue' + str(GreatDecrease[1]) + '($'+ str(GreatDecrease[0]) + ')')
 
     print("\n".join((Printlist)))
+    
+with open(csvpath, 'w') as txtfile:
+    txtfile.write("\n".join((Win)))
